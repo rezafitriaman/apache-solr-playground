@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Product1",
+    "cat": ["Category1", "Category2"],
+    "manu": "Manufacturer1",
+    "features": ["Feature1", "Feature2"],
+    "weight": 1.5,
+    "price": 99.99,
+    "popularity": 100,
+    "inStock": true,
+    "store": "40.7128,-74.0060"
+  },
+  {
+    "name": "Product2",
+    "cat": ["Category2", "Category3"],
+    "manu": "Manufacturer2",
+    "features": ["Feature3", "Feature4"],
+    "weight": 2.0,
+    "price": 149.99,
+    "popularity": 75,
+    "inStock": false,
+    "store": "34.0522,-118.2437"
+  },
+  {
+    "name": "Product3",
+    "cat": ["Category1"],
+    "manu": "Manufacturer3",
+    "features": ["Feature5", "Feature6"],
+    "weight": 1.2,
+    "price": 79.99,
+    "popularity": 50,
+    "inStock": true,
+    "store": "41.8781,-87.6298"
+  },
+  {
+    "name": "Product4",
+    "cat": ["Category3"],
+    "manu": "Manufacturer2",
+    "features": ["Feature2", "Feature4"],
+    "weight": 1.8,
+    "price": 129.99,
+    "popularity": 90,
+    "inStock": true,
+    "store": "37.7749,-122.4194"
+  },
+  {
+    "name": "Product5",
+    "cat": ["Category1", "Category2", "Category3"],
+    "manu": "Manufacturer1",
+    "features": ["Feature1", "Feature3", "Feature6"],
+    "weight": 2.5,
+    "price": 199.99,
+    "popularity": 80,
+    "inStock": true,
+    "store": "33.7490,-84.3880"
+  },
+  {
+    "name": "Product6",
+    "cat": ["Category2"],
+    "manu": "Manufacturer3",
+    "features": ["Feature4", "Feature5"],
+    "weight": 1.0,
+    "price": 59.99,
+    "popularity": 60,
+    "inStock": false,
+    "store": "32.7157,-117.1611"
+  }
+]
