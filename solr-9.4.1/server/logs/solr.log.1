@@ -133,3 +133,41 @@
 2024-02-13 22:05:18.797 INFO  (qtp105966264-19) [c: s: r: x: t:localhost-102] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1707861746888} status=0 QTime=9
 2024-02-13 22:05:18.802 INFO  (qtp105966264-25) [c: s: r: x: t:localhost-104] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1707861746888} status=0 QTime=2
 2024-02-13 22:05:18.803 INFO  (qtp105966264-23) [c: s: r: x: t:localhost-99] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=localhost:8983_solr,localhost:8984_solr&wt=json&_=1707861746888} status=0 QTime=24
+2024-02-13 22:08:24.899 INFO  (OverseerThreadFactory-15-thread-1) [c:techproducts s: r: x: t:] o.a.s.c.a.c.CreateCollectionCmd Create collection techproducts
+2024-02-13 22:08:25.552 INFO  (OverseerStateUpdate-72057635346251776-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"techproducts_shard1_replica_n1",
+  "node_name":"localhost:8984_solr",
+  "base_url":"http://localhost:8984/solr",
+  "collection":"techproducts",
+  "shard":"shard1",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2024-02-13 22:08:25.661 INFO  (zkCallback-9-thread-3) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 294] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-13 22:08:26.376 INFO  (qtp105966264-87) [c:techproducts s: r: x: t:localhost-105] o.a.s.h.a.CollectionsHandler Wait for new collection to be active for at most 45 seconds. Check all shard replicas
+2024-02-13 22:08:26.467 INFO  (zkCallback-9-thread-3) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 318] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-13 22:08:26.476 INFO  (qtp105966264-87) [c:techproducts s: r: x: t:localhost-105] o.a.s.s.HttpSolrCall method=POST path=/collections query-params={} entity={  "name":"techproducts",  "replicationFactor":1,  "numShards":1} status=0 QTime=1660
+2024-02-13 22:08:26.909 INFO  (OverseerCollectionConfigSetProcessor-72057635346251776-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000000 doesn't exist. Requestor may have disconnected from ZooKeeper
+2024-02-13 22:08:39.057 INFO  (qtp105966264-86) [c: s: r: x: t:localhost-107] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707862119029} status=0 QTime=0
+2024-02-13 22:08:39.062 INFO  (qtp105966264-19) [c: s: r: x: t:localhost-109] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707862119030} status=0 QTime=3
+2024-02-13 22:08:39.063 INFO  (qtp105966264-20) [c: s: r: x: t:localhost-108] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1707862119030} status=0 QTime=4
+2024-02-13 22:08:39.085 INFO  (qtp105966264-20) [c: s: r: x: t:localhost-112] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1707862119030} status=0 QTime=9
+2024-02-13 22:08:39.088 INFO  (qtp105966264-21) [c: s: r: x: t:localhost-114] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1707862119030} status=0 QTime=1
+2024-02-13 22:08:39.088 INFO  (qtp105966264-23) [c: s: r: x: t:localhost-110] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=localhost:8983_solr,localhost:8984_solr&wt=json&_=1707862119030} status=0 QTime=19
+2024-02-13 22:08:39.089 INFO  (qtp105966264-25) [c: s: r: x: t:localhost-115] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1707862119030} status=0 QTime=0
+2024-02-13 22:08:48.148 INFO  (qtp105966264-18) [c: s: r: x: t:localhost-117] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1707861908021} status=0 QTime=2
+2024-02-13 22:08:49.305 INFO  (qtp105966264-19) [c: s: r: x: t:localhost-119] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1707862129271} status=0 QTime=1
+2024-02-13 22:08:55.834 INFO  (qtp105966264-18) [c: s: r: x: t:localhost-122] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707862119029} status=0 QTime=0
+2024-02-13 22:08:55.836 INFO  (qtp105966264-81) [c: s: r: x: t:localhost-121] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1707862119030} status=0 QTime=2
+2024-02-13 22:08:55.836 INFO  (qtp105966264-19) [c: s: r: x: t:localhost-120] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707862119030} status=0 QTime=2
+2024-02-13 22:08:55.842 INFO  (qtp105966264-22) [c: s: r: x: t:localhost-123] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1707862119030} status=0 QTime=0
+2024-02-13 22:08:55.845 INFO  (qtp105966264-19) [c: s: r: x: t:localhost-124] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1707862119030} status=0 QTime=0
+2024-02-13 22:09:13.462 INFO  (qtp105966264-19) [c: s: r: x: t:localhost-125] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707862119029} status=0 QTime=0
+2024-02-13 22:09:13.464 INFO  (qtp105966264-20) [c: s: r: x: t:localhost-126] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707862119030} status=0 QTime=2
+2024-02-13 22:09:13.469 INFO  (qtp105966264-22) [c: s: r: x: t:localhost-127] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1707862119030} status=0 QTime=0
+2024-02-13 22:09:13.472 INFO  (qtp105966264-20) [c: s: r: x: t:localhost-128] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1707862119030} status=0 QTime=0
+2024-02-13 22:09:14.244 INFO  (qtp105966264-22) [c: s: r: x: t:localhost-129] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1707862119029} status=0 QTime=0
+2024-02-13 22:09:14.247 INFO  (qtp105966264-81) [c: s: r: x: t:localhost-130] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1707862119030} status=0 QTime=3
+2024-02-13 22:09:14.260 INFO  (qtp105966264-20) [c: s: r: x: t:localhost-132] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1707862119030} status=0 QTime=1
+2024-02-13 22:09:14.275 INFO  (qtp105966264-23) [c: s: r: x: t:localhost-133] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1707862119030} status=0 QTime=0
