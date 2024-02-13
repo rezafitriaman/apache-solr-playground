@@ -450,3 +450,5 @@
 127.0.0.1 - - [13/Feb/2024:22:30:27 +0000] "GET /solr/techproducts/select?q=name%3Alightning HTTP/1.1" 200 254
 127.0.0.1 - - [13/Feb/2024:22:30:45 +0000] "GET /solr/techproducts/select?q=name%3Aproduct5&_forwardedCount=1 HTTP/1.1" 200 628
 127.0.0.1 - - [13/Feb/2024:22:30:45 +0000] "GET /solr/techproducts/select?q=name%3Aproduct5 HTTP/1.1" 200 628
+127.0.0.1 - - [13/Feb/2024:22:32:53 +0000] "GET /solr/techproducts/select?q=name%3Aproduct2&_forwardedCount=1 HTTP/1.1" 200 607
+127.0.0.1 - - [13/Feb/2024:22:32:53 +0000] "GET /solr/techproducts/select?q=name%3Aproduct2 HTTP/1.1" 200 607
