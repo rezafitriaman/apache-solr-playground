@@ -452,3 +452,7 @@
 127.0.0.1 - - [13/Feb/2024:22:30:45 +0000] "GET /solr/techproducts/select?q=name%3Aproduct5 HTTP/1.1" 200 628
 127.0.0.1 - - [13/Feb/2024:22:32:53 +0000] "GET /solr/techproducts/select?q=name%3Aproduct2&_forwardedCount=1 HTTP/1.1" 200 607
 127.0.0.1 - - [13/Feb/2024:22:32:53 +0000] "GET /solr/techproducts/select?q=name%3Aproduct2 HTTP/1.1" 200 607
+127.0.0.1 - - [13/Feb/2024:22:33:30 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 3249
+127.0.0.1 - - [13/Feb/2024:22:33:30 +0000] "GET /solr/admin/collections?action=CLUSTERSTATUS&wt=javabin&version=2 HTTP/2.0" 200 548
+127.0.0.1 - - [13/Feb/2024:22:33:31 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 3227
+127.0.0.1 - - [13/Feb/2024:22:33:31 +0000] "GET /solr/admin/collections?action=CLUSTERSTATUS&wt=javabin&version=2 HTTP/2.0" 200 548
