@@ -1,0 +1,8 @@
+127.0.0.1 - - [17/Feb/2024:11:38:50 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 3467
+127.0.0.1 - - [17/Feb/2024:11:38:50 +0000] "GET /solr/admin/collections?action=CLUSTERSTATUS&wt=javabin&version=2 HTTP/2.0" 200 97
+127.0.0.1 - - [17/Feb/2024:11:39:17 +0000] "GET /solr/admin/collections?action=LIST&wt=javabin&version=2 HTTP/2.0" 200 54
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 3466
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "GET /solr/admin/collections?action=CLUSTERSTATUS&wt=javabin&version=2 HTTP/2.0" 200 121
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "GET /solr/admin/collections?action=LIST&wt=javabin&version=2 HTTP/2.0" 200 58
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "POST /solr/admin/cores HTTP/2.0" 200 78
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "POST /solr/admin/cores HTTP/2.0" 200 78

@@ -1,0 +1,158 @@
+2024-02-17 11:38:48.309 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.19; built: 2023-12-15T20:38:32.477Z; git: 8492d1c78f122bb30cce20aecfa07e7283facd47; jvm 17.0.7+7
+2024-02-17 11:38:48.484 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-02-17 11:38:48.500 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-02-17 11:38:48.503 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.5.0
+2024-02-17 11:38:48.503 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in cloud mode on port 8983
+2024-02-17 11:38:48.503 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0
+2024-02-17 11:38:48.503 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-02-17T11:38:48.503326Z
+2024-02-17 11:38:48.504 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/../logs/jvm_crash_57057.log
+2024-02-17 11:38:48.516 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr (source: system property: solr.solr.home)
+2024-02-17 11:38:48.524 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/solr.xml
+2024-02-17 11:38:48.541 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/lib]
+2024-02-17 11:38:48.998 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-02-17 11:38:49.133 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-02-17 11:38:49.137 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrZkServerProps Reading configuration from: /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/zoo.cfg
+2024-02-17 11:38:49.138 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrZkServer STARTING EMBEDDED ENSEMBLE ZOOKEEPER SERVER at port 9983, listening on host 127.0.0.1
+2024-02-17 11:38:49.138 WARN  (main) [c: s: r: x: t:] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2024-02-17 11:38:49.154 WARN  (embeddedZkServer) [c: s: r: x: t:] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2024-02-17 11:38:49.640 INFO  (main) [c: s: r: x: t:] o.a.s.c.ZkContainer Zookeeper client=127.0.0.1:9983
+2024-02-17 11:38:49.659 INFO  (main) [c: s: r: x: t:] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2024-02-17 11:38:49.678 INFO  (main) [c: s: r: x: t:] o.a.s.c.c.ConnectionManager Waiting up to 15000ms for client to connect to ZooKeeper
+2024-02-17 11:38:49.695 INFO  (zkConnectionManagerCallback-10-thread-1) [c: s: r: x: t:] o.a.s.c.c.ConnectionManager zkClient has connected
+2024-02-17 11:38:49.695 INFO  (main) [c: s: r: x: t:] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2024-02-17 11:38:49.833 WARN  (main) [c: s: r: x: t:] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/solr/latest/deployment-guide/zookeeper-access-control.html
+2024-02-17 11:38:49.843 INFO  (main) [c: s: r: x: t:] o.a.s.c.DistributedClusterStateUpdater Creating DistributedClusterStateUpdater with useDistributedStateUpdate=false. Solr will be using Overseer based cluster state updates.
+2024-02-17 11:38:49.857 INFO  (main) [c: s: r: x: t:] o.a.s.c.OverseerElectionContext I am going to be the leader localhost:8983_solr
+2024-02-17 11:38:49.863 INFO  (main) [c: s: r: x: t:] o.a.s.c.Overseer Overseer (id=72066634632134656-localhost:8983_solr-n_0000000000) starting
+2024-02-17 11:38:49.902 INFO  (main) [c: s: r: x: t:] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/localhost:8983_solr
+2024-02-17 11:38:49.902 INFO  (OverseerStateUpdate-72066634632134656-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.Overseer Starting to work on the main queue : localhost:8983_solr
+2024-02-17 11:38:49.909 INFO  (zkCallback-9-thread-1) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2024-02-17 11:38:49.924 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-02-17 11:38:50.181 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr
+2024-02-17 11:38:50.261 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2024-02-17 11:38:50.376 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-17 11:38:50.427 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@577f9109{solr-jetty-context.xml,/solr,file:///Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/server/solr-webapp/webapp}
+2024-02-17 11:38:50.430 INFO  (main) [c: s: r: x: t:] o.e.j.s.RequestLogWriter Opened /Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/logs/2024_02_17.request.log
+2024-02-17 11:38:50.431 INFO  (main) [c: s: r: x: t:] o.e.j.s.AbstractConnector Started ServerConnector@436390f4{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-02-17 11:38:50.432 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server Started Server@2bffa76d{STARTING}[10.0.19,sto=0] @2790ms
+2024-02-17 11:38:50.491 INFO  (qtp515273883-20-localhost-1) [c: s: r: x: t:localhost-1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2} status=0 QTime=15
+2024-02-17 11:38:50.509 INFO  (qtp515273883-26-localhost-2) [c: s: r: x: t:localhost-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=javabin&version=2} status=0 QTime=4
+2024-02-17 11:38:52.127 INFO  (zkCallback-9-thread-1) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2024-02-17 11:39:17.935 INFO  (qtp515273883-25-localhost-3) [c: s: r: x: t:localhost-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=javabin&version=2} status=0 QTime=6
+2024-02-17 11:39:24.211 INFO  (qtp515273883-27-localhost-4) [c: s: r: x: t:localhost-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2} status=0 QTime=2
+2024-02-17 11:39:24.214 INFO  (qtp515273883-20-localhost-5) [c: s: r: x: t:localhost-5] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=javabin&version=2} status=0 QTime=0
+2024-02-17 11:39:24.384 INFO  (qtp515273883-27-localhost-6) [c: s: r: x: t:localhost-6] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=javabin&version=2} status=0 QTime=0
+2024-02-17 11:39:24.407 INFO  (OverseerThreadFactory-15-thread-1) [c:techproducts s: r: x: t:] o.a.s.c.a.c.CreateCollectionCmd Create collection techproducts
+2024-02-17 11:39:24.550 INFO  (OverseerStateUpdate-72066634632134656-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"techproducts_shard2_replica_n1",
+  "node_name":"localhost:7574_solr",
+  "base_url":"http://localhost:7574/solr",
+  "collection":"techproducts",
+  "shard":"shard2",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2024-02-17 11:39:24.560 INFO  (OverseerStateUpdate-72066634632134656-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"techproducts_shard2_replica_n2",
+  "node_name":"localhost:8983_solr",
+  "base_url":"http://localhost:8983/solr",
+  "collection":"techproducts",
+  "shard":"shard2",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2024-02-17 11:39:24.568 INFO  (OverseerStateUpdate-72066634632134656-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"techproducts_shard1_replica_n4",
+  "node_name":"localhost:7574_solr",
+  "base_url":"http://localhost:7574/solr",
+  "collection":"techproducts",
+  "shard":"shard1",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2024-02-17 11:39:24.578 INFO  (OverseerStateUpdate-72066634632134656-localhost:8983_solr-n_0000000000) [c: s: r: x: t:] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"techproducts_shard1_replica_n6",
+  "node_name":"localhost:8983_solr",
+  "base_url":"http://localhost:8983/solr",
+  "collection":"techproducts",
+  "shard":"shard1",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2024-02-17 11:39:24.690 INFO  (zkCallback-9-thread-1) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 180] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-17 11:39:24.729 INFO  (qtp515273883-81-localhost-7) [c: s: r: x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&collection.configName=techproducts&newCollection=true&collection=techproducts&version=2&replicaType=NRT&coreNodeName=core_node5&name=techproducts_shard2_replica_n2&action=CREATE&numShards=2&shard=shard2&wt=javabin
+2024-02-17 11:39:24.729 INFO  (qtp515273883-21-localhost-7) [c: s: r: x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&collection.configName=techproducts&newCollection=true&collection=techproducts&version=2&replicaType=NRT&coreNodeName=core_node8&name=techproducts_shard1_replica_n6&action=CREATE&numShards=2&shard=shard1&wt=javabin
+2024-02-17 11:39:24.777 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.9.0
+2024-02-17 11:39:24.777 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.9.0
+2024-02-17 11:39:24.821 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.s.IndexSchema Schema name=default-config
+2024-02-17 11:39:24.821 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.s.IndexSchema Schema name=default-config
+2024-02-17 11:39:24.955 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2024-02-17 11:39:24.955 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2024-02-17 11:39:24.955 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard1_replica_n6' using configuration from configset techproducts, trusted=true
+2024-02-17 11:39:24.955 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard2_replica_n2' using configuration from configset techproducts, trusted=true
+2024-02-17 11:39:24.963 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.SolrCore Opening new SolrCore at [/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/techproducts_shard2_replica_n2], dataDir=[/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/techproducts_shard2_replica_n2/data/]
+2024-02-17 11:39:24.963 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.SolrCore Opening new SolrCore at [/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/techproducts_shard1_replica_n6], dataDir=[/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.5.0/example/cloud/node1/solr/techproducts_shard1_replica_n6/data/]
+2024-02-17 11:39:25.221 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-02-17 11:39:25.231 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2024-02-17 11:39:25.231 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2024-02-17 11:39:25.231 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2024-02-17 11:39:25.231 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2024-02-17 11:39:25.233 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2024-02-17 11:39:25.233 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2024-02-17 11:39:25.233 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2024-02-17 11:39:25.233 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2024-02-17 11:39:25.257 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/techproducts
+2024-02-17 11:39:25.257 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/techproducts
+2024-02-17 11:39:25.259 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/techproducts
+2024-02-17 11:39:25.259 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/techproducts
+2024-02-17 11:39:25.259 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/techproducts/managed-schema.xml
+2024-02-17 11:39:25.259 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/techproducts/managed-schema.xml
+2024-02-17 11:39:25.260 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2024-02-17 11:39:25.260 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2024-02-17 11:39:25.266 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2024-02-17 11:39:25.266 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2024-02-17 11:39:25.269 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-17 11:39:25.269 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-02-17 11:39:25.272 INFO  (searcherExecutor-22-thread-1-processing-techproducts_shard1_replica_n6 localhost-7 core_node8 localhost:8983_solr techproducts shard1) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-02-17 11:39:25.272 INFO  (searcherExecutor-21-thread-1-processing-techproducts_shard2_replica_n2 localhost-7 core_node5 localhost:8983_solr techproducts shard2) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-02-17 11:39:25.272 INFO  (searcherExecutor-21-thread-1-processing-techproducts_shard2_replica_n2 localhost-7 core_node5 localhost:8983_solr techproducts shard2) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2024-02-17 11:39:25.272 INFO  (searcherExecutor-22-thread-1-processing-techproducts_shard1_replica_n6 localhost-7 core_node8 localhost:8983_solr techproducts shard1) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2024-02-17 11:39:25.276 INFO  (searcherExecutor-21-thread-1-processing-techproducts_shard2_replica_n2 localhost-7 core_node5 localhost:8983_solr techproducts shard2) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-17 11:39:25.276 INFO  (searcherExecutor-22-thread-1-processing-techproducts_shard1_replica_n6 localhost-7 core_node8 localhost:8983_solr techproducts shard1) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-02-17 11:39:25.290 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ZkShardTerms Successful update of terms at /collections/techproducts/terms/shard2 to Terms{values={core_node5=0}, version=0} for registerTerm
+2024-02-17 11:39:25.300 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ZkShardTerms Successful update of terms at /collections/techproducts/terms/shard1 to Terms{values={core_node8=0}, version=0} for registerTerm
+2024-02-17 11:39:25.301 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/techproducts/leaders/shard1
+2024-02-17 11:39:25.301 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/techproducts/leaders/shard2
+2024-02-17 11:39:25.335 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179999ms
+2024-02-17 11:39:25.335 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179997ms
+2024-02-17 11:39:25.839 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2024-02-17 11:39:25.840 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2024-02-17 11:39:25.840 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.SyncStrategy Sync replicas to http://localhost:8983/solr/techproducts_shard1_replica_n6/
+2024-02-17 11:39:25.840 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2024-02-17 11:39:25.840 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2024-02-17 11:39:25.840 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.SyncStrategy Sync replicas to http://localhost:8983/solr/techproducts_shard2_replica_n2/
+2024-02-17 11:39:25.843 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.u.PeerSync PeerSync: core=techproducts_shard1_replica_n6 url=http://localhost:8983/solr  START replicas=[http://localhost:7574/solr/techproducts_shard1_replica_n4/] nUpdates=100
+2024-02-17 11:39:25.843 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.u.PeerSync PeerSync: core=techproducts_shard2_replica_n2 url=http://localhost:8983/solr  START replicas=[http://localhost:7574/solr/techproducts_shard2_replica_n1/] nUpdates=100
+2024-02-17 11:39:25.844 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.u.PeerSync PeerSync: core=techproducts_shard1_replica_n6 url=http://localhost:8983/solr  DONE. We have no versions. sync failed.
+2024-02-17 11:39:25.844 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.u.PeerSync PeerSync: core=techproducts_shard2_replica_n2 url=http://localhost:8983/solr  DONE. We have no versions. sync failed.
+2024-02-17 11:39:25.851 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2024-02-17 11:39:25.851 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2024-02-17 11:39:25.851 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2024-02-17 11:39:25.851 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2024-02-17 11:39:25.851 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/techproducts/leaders/shard2/leader after winning as /collections/techproducts/leader_elect/shard2/election/72066634632134656-core_node5-n_0000000000
+2024-02-17 11:39:25.851 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/techproducts/leaders/shard1/leader after winning as /collections/techproducts/leader_elect/shard1/election/72066634632134656-core_node8-n_0000000000
+2024-02-17 11:39:25.860 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://localhost:8983/solr/techproducts_shard1_replica_n6/ shard1
+2024-02-17 11:39:25.861 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://localhost:8983/solr/techproducts_shard2_replica_n2/ shard2
+2024-02-17 11:39:25.972 INFO  (zkCallback-9-thread-1) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 230] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-17 11:39:25.976 INFO  (qtp515273883-81-localhost-7) [c:techproducts s:shard2 r:core_node5 x:techproducts_shard2_replica_n2 t:localhost-7] o.a.s.c.ZkController I am the leader, no recovery necessary
+2024-02-17 11:39:25.976 INFO  (qtp515273883-21-localhost-7) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:localhost-7] o.a.s.c.ZkController I am the leader, no recovery necessary
+2024-02-17 11:39:25.984 INFO  (qtp515273883-21-localhost-7) [c: s: r: x: t:localhost-7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node8&collection.configName=techproducts&newCollection=true&name=techproducts_shard1_replica_n6&action=CREATE&numShards=2&collection=techproducts&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=1255
+2024-02-17 11:39:25.984 INFO  (qtp515273883-81-localhost-7) [c: s: r: x: t:localhost-7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node5&collection.configName=techproducts&newCollection=true&name=techproducts_shard2_replica_n2&action=CREATE&numShards=2&collection=techproducts&shard=shard2&wt=javabin&version=2&replicaType=NRT} status=0 QTime=1256
+2024-02-17 11:39:26.092 INFO  (zkCallback-9-thread-1) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 234] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-17 11:39:26.092 INFO  (zkCallback-9-thread-2) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 234] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-17 11:39:26.509 INFO  (zkCallback-9-thread-1) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 243] for collection [techproducts] has occurred - updating... (live nodes size: [2])
+2024-02-17 11:39:26.509 INFO  (zkCallback-9-thread-2) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 243] for collection [techproducts] has occurred - updating... (live nodes size: [2])

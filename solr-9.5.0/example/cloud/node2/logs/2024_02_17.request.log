@@ -1,0 +1,7 @@
+127.0.0.1 - - [17/Feb/2024:11:38:53 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 3482
+127.0.0.1 - - [17/Feb/2024:11:38:53 +0000] "GET /solr/admin/collections?action=CLUSTERSTATUS&wt=javabin&version=2 HTTP/2.0" 200 117
+127.0.0.1 - - [17/Feb/2024:11:39:25 +0000] "POST /solr/techproducts_shard2_replica_n1/get HTTP/2.0" 200 13
+127.0.0.1 - - [17/Feb/2024:11:39:25 +0000] "POST /solr/techproducts_shard1_replica_n4/get HTTP/2.0" 200 13
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "POST /solr/admin/cores HTTP/2.0" 200 78
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "POST /solr/admin/cores HTTP/2.0" 200 78
+127.0.0.1 - - [17/Feb/2024:11:39:24 +0000] "GET /solr/admin/collections?action=CREATE&name=techproducts&collection.configName=techproducts&numShards=2&nrtReplicas=2&wt=javabin&version=2 HTTP/2.0" 200 277
