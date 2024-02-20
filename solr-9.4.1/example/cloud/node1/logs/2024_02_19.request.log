@@ -1,0 +1,2 @@
+127.0.0.1 - - [19/Feb/2024:22:33:29 +0000] "GET /solr/admin/info/system?wt=javabin&version=2 HTTP/2.0" 200 3465
+127.0.0.1 - - [19/Feb/2024:22:33:29 +0000] "GET /solr/admin/collections?action=CLUSTERSTATUS&wt=javabin&version=2 HTTP/2.0" 200 923
