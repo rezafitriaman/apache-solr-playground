@@ -353,3 +353,56 @@
 2024-02-21 15:20:47.998 INFO  (qtp515273883-113) [c: s: r: x: t:localhost-116] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1708528847907} status=0 QTime=1
 2024-02-21 19:31:34.655 INFO  (qtp515273883-113) [c: s: r: x: t:localhost-117] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2} status=0 QTime=6
 2024-02-21 19:31:34.670 INFO  (qtp515273883-121) [c: s: r: x: t:localhost-118] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=javabin&version=2} status=0 QTime=4
+2024-02-21 19:32:55.756 INFO  (zkCallback-11-thread-3) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2024-02-21 19:32:55.761 INFO  (zkCallback-11-thread-3) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 272] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2024-02-21 19:32:55.761 INFO  (zkCallback-11-thread-4) [c: s: r: x: t:] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json zxid: 272] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2024-02-21 19:32:55.836 INFO  (zkCallback-11-thread-4) [c: s: r: x: t:] o.a.s.c.OverseerElectionContext I am going to be the leader localhost:7574_solr
+2024-02-21 19:32:55.842 INFO  (zkCallback-11-thread-4) [c: s: r: x: t:] o.a.s.c.Overseer Overseer (id=72066981367382018-localhost:7574_solr-n_0000000001) starting
+2024-02-21 19:32:55.886 INFO  (OverseerStateUpdate-72066981367382018-localhost:7574_solr-n_0000000001) [c: s: r: x: t:] o.a.s.c.Overseer Starting to work on the main queue : localhost:7574_solr
+2024-02-21 19:32:56.380 WARN  (main-SendThread(127.0.0.1:9983)) [c: s: r: x: t:] o.a.z.ClientCnxn Session 0x1000889a8700002 for server localhost/127.0.0.1:9983, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x1000889a8700002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000889a8700002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274) ~[?:?]
+2024-02-21 19:32:56.486 WARN  (zkConnectionManagerCallback-12-thread-1) [c: s: r: x: t:] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@28613332 name: ZooKeeperConnection Watcher:127.0.0.1:9983 got event WatchedEvent state:Disconnected type:None path:null zxid: -1 path: null type: None
+2024-02-21 19:32:56.487 WARN  (zkConnectionManagerCallback-12-thread-1) [c: s: r: x: t:] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2024-02-21 19:32:58.095 WARN  (main-SendThread(127.0.0.1:9983)) [c: s: r: x: t:] o.a.z.ClientCnxn Session 0x1000889a8700002 for server localhost/127.0.0.1:9983, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274) ~[?:?]
+2024-02-21 19:32:58.108 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.e.j.s.Server Stopped Server@2bffa76d{STOPPING}[10.0.19,sto=0]
+2024-02-21 19:32:58.111 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.e.j.s.AbstractConnector Stopped ServerConnector@436390f4{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:7574}
+2024-02-21 19:32:58.117 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.c.CoreContainer Shutting down CoreContainer instance=99195804
+2024-02-21 19:32:58.117 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/localhost:7574_solr
+2024-02-21 19:32:59.563 WARN  (main-SendThread(127.0.0.1:9983)) [c: s: r: x: t:] o.a.z.ClientCnxn Session 0x1000889a8700002 for server localhost/127.0.0.1:9983, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274) ~[?:?]
+2024-02-21 19:32:59.709 INFO  (coreCloseExecutor-39-thread-1) [c:techproducts s:shard2 r:core_node7 x:techproducts_shard2_replica_n4 t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@27909aae techproducts_shard2_replica_n4
+2024-02-21 19:32:59.709 INFO  (coreCloseExecutor-39-thread-2) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@254aef19 techproducts_shard1_replica_n6
+2024-02-21 19:32:59.710 INFO  (coreCloseExecutor-39-thread-2) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard1.replica_n6 tag=SolrCore@254aef19
+2024-02-21 19:32:59.734 INFO  (coreCloseExecutor-39-thread-1) [c:techproducts s:shard2 r:core_node7 x:techproducts_shard2_replica_n4 t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard2.replica_n4 tag=SolrCore@27909aae
+2024-02-21 19:32:59.744 INFO  (coreCloseExecutor-39-thread-2) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard1.leader tag=SolrCore@254aef19
+2024-02-21 19:32:59.744 INFO  (coreCloseExecutor-39-thread-1) [c:techproducts s:shard2 r:core_node7 x:techproducts_shard2_replica_n4 t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard2.leader tag=SolrCore@27909aae
+2024-02-21 19:32:59.750 INFO  (coreCloseExecutor-39-thread-2) [c:techproducts s:shard1 r:core_node8 x:techproducts_shard1_replica_n6 t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-21 19:32:59.750 INFO  (coreCloseExecutor-39-thread-1) [c:techproducts s:shard2 r:core_node7 x:techproducts_shard2_replica_n4 t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2024-02-21 19:32:59.758 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2024-02-21 19:32:59.764 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2024-02-21 19:32:59.767 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2024-02-21 19:32:59.767 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2024-02-21 19:32:59.768 INFO  (closeThreadPool-40-thread-1) [c: s: r: x: t:] o.a.s.c.Overseer Overseer (id=72066981367382018-localhost:7574_solr-n_0000000001) closing
+2024-02-21 19:32:59.769 INFO  (OverseerCollectionConfigSetProcessor-72066981367382018-localhost:7574_solr-n_0000000001) [c: s: r: x: t:] o.a.s.c.OverseerTaskProcessor According to ZK I (id=72066981367382018-localhost:7574_solr-n_0000000001) am no longer a leader. propsId=null
+2024-02-21 19:32:59.768 INFO  (OverseerStateUpdate-72066981367382018-localhost:7574_solr-n_0000000001) [c: s: r: x: t:] o.a.s.c.Overseer According to ZK I (id=72066981367382018-localhost:7574_solr-n_0000000001) am no longer a leader. propsId=null
+2024-02-21 19:32:59.769 INFO  (OverseerStateUpdate-72066981367382018-localhost:7574_solr-n_0000000001) [c: s: r: x: t:] o.a.s.c.Overseer Overseer Loop exiting : localhost:7574_solr
+2024-02-21 19:32:59.769 INFO  (closeThreadPool-40-thread-2) [c: s: r: x: t:] o.a.s.c.Overseer Overseer (id=72066981367382018-localhost:7574_solr-n_0000000001) closing
+2024-02-21 19:33:01.201 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.a.s.c.Overseer Overseer (id=72066981367382018-localhost:7574_solr-n_0000000001) closing
+2024-02-21 19:33:01.215 INFO  (ShutdownMonitor) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@577f9109{solr-jetty-context.xml,/solr,file:///Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.4.1/server/solr-webapp/webapp/,STOPPED}{/Users/rezafitriaman/IdeaProjects/apache-solr-playground/solr-9.4.1/server/solr-webapp/webapp}
